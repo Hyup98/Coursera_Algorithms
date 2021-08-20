@@ -24,18 +24,20 @@ public class Percolation {
         if(row-1 > 0) {
             if (grid[row - 1][col] == true) {
                 if (unionFind[row][col] < unionFind[row - 1][col]) {
+                    int tem = unionFind[row - 1][col];
                     for (int i = 1; i <= size; i++) {
                         for (int j = 1; j <= size; j++) {
-                            if (unionFind[i][j] == unionFind[row - 1][col]) {
+                            if (unionFind[i][j] == tem) {
                                 unionFind[i][j] = unionFind[row][col];
                             }
                         }
                     }
                 }
                 else {
+                    int tem = unionFind[row][col];
                     for (int i = 1; i <= size; i++) {
                         for (int j = 1; j <= size; j++) {
-                            if (unionFind[i][j] == unionFind[row][col]) {
+                            if (unionFind[i][j] == tem) {
                                 unionFind[i][j] = unionFind[row - 1][col];
                             }
                         }
@@ -46,15 +48,17 @@ public class Percolation {
         if(row+1 <= size) {
          if (grid[row + 1][col] == true) {
                 if (unionFind[row][col] < unionFind[row + 1][col]) {
+                    int tem = unionFind[row + 1][col];
                     for (int i = 1; i <= size; i++) {
                         for (int j = 1; j <= size; j++) {
-                            if (unionFind[i][j] == unionFind[row + 1][col]) {
+                            if (unionFind[i][j] == tem) {
                                 unionFind[i][j] = unionFind[row][col];
                             }
                         }
                     }
                 }
                 else {
+                    int tem =  unionFind[row][col];
                     for (int i = 1; i <= size; i++) {
                         for (int j = 1; j <= size; j++) {
                             if (unionFind[i][j] == unionFind[row][col]) {
@@ -68,18 +72,20 @@ public class Percolation {
         if(col - 1 > 0) {
             if(grid[row][col-1] == true) {
                 if (unionFind[row][col] < unionFind[row][col - 1]) {
+                    int tem = unionFind[row][col - 1];
                     for (int i = 1; i <= size; i++) {
                         for (int j = 1; j <= size; j++) {
-                            if (unionFind[i][j] == unionFind[row][col - 1]) {
+                            if (unionFind[i][j] == tem) {
                                 unionFind[i][j] = unionFind[row][col];
                             }
                         }
                     }
                 }
                 else {
+                    int tem = unionFind[row][col];
                     for (int i = 1; i <= size; i++) {
                         for (int j = 1; j <= size; j++) {
-                            if (unionFind[i][j] == unionFind[row][col]) {
+                            if (unionFind[i][j] == tem) {
                                 unionFind[i][j] = unionFind[row][col - 1];
                             }
                         }
@@ -90,18 +96,20 @@ public class Percolation {
         if(col + 1 <= size) {
             if (grid[row][col + 1] == true) {
                 if (unionFind[row][col] < unionFind[row][col + 1]) {
+                    int tem = unionFind[row][col + 1];
                     for (int i = 1; i <= size; i++) {
                         for (int j = 1; j <= size; j++) {
-                            if (unionFind[i][j] == unionFind[row][col + 1]) {
+                            if (unionFind[i][j] == tem) {
                                 unionFind[i][j] = unionFind[row][col];
                             }
                         }
                     }
                 }
                 else {
+                    int tem = unionFind[row][col];
                     for (int i = 1; i <= size; i++) {
                         for (int j = 1; j <= size; j++) {
-                            if (unionFind[i][j] == unionFind[row][col]) {
+                            if (unionFind[i][j] == tem) {
                                 unionFind[i][j] = unionFind[row][col + 1];
                             }
                         }

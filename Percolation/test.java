@@ -10,7 +10,7 @@ public class test {
         Percolation test = new Percolation(10);
         Scanner scanner = new Scanner(System.in);
         while(true) {
-            test.print();1 4
+            test.print();
             System.out.print("\n");
             int a = scanner.nextInt();
             if(a == -1){
