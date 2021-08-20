@@ -164,8 +164,13 @@ public class Percolation {
 
     public void print() {
         StringBuilder builder = new StringBuilder();
-        builder.append("         <Percolation>\n");
-        builder.append(grid);
+        builder.append("   <Percolation>\n");
+        for (int i = 1; i <= size; i++) {
+            for (int j = 1; j <= size; j++) {
+                builder.append(unionFind[i][j] + " ");
+            }
+            builder.append('\n');
+        }
         System.out.print(builder.toString());
     }
 
