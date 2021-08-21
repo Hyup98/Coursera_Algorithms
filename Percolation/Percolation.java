@@ -146,8 +146,10 @@ public class Percolation {
 
     // is the site (row, col) full?
     public boolean isFull(int row, int col) {
-        if(unionFind[row][col] != 0) {
-            return true;
+        for(int i = 1; i < size; i++) {
+            if(unionFind[row][col] == unionFind[1][i]) {
+                return true;
+            }
         }
         return false;
     }
