@@ -26,6 +26,28 @@ public class PercolationVisualizer {
     // delay in milliseconds (controls animation speed)
     private static final int DELAY = 100;
 
+    public static void main(String[] args) {
+        In in = new In(args[0]);      // input file
+        int n = in.readInt();         // n-by-n percolation system
+
+        // turn on animation mode
+        StdDraw.enableDoubleBuffering();
+
+        // repeatedly read in sites to open and draw resulting system
+        Percolation perc = new Percolation(n);
+        draw(perc, n);
+        StdDraw.show();
+        StdDraw.pause(DELAY);
+        while (!in.isEmpty()) {
+            int i = in.readInt();
+            int j = in.readInt();
+            perc.open(i, j);
+            draw(perc, n);
+            StdDraw.show();
+            StdDraw.pause(DELAY);
+        }
+    }
+
     // draw n-by-n percolation system
     public static void draw(Percolation perc, int n) {
         StdDraw.clear();
@@ -59,28 +81,6 @@ public class PercolationVisualizer {
         if (perc.percolates()) StdDraw.text(0.75 * n, -0.025 * n, "percolates");
         else StdDraw.text(0.75 * n, -0.025 * n, "does not percolate");
 
-    }
-
-    public static void main(String[] args) {
-        In in = new In(args[0]);      // input file
-        int n = in.readInt();         // n-by-n percolation system
-
-        // turn on animation mode
-        StdDraw.enableDoubleBuffering();
-
-        // repeatedly read in sites to open and draw resulting system
-        Percolation perc = new Percolation(n);
-        draw(perc, n);
-        StdDraw.show();
-        StdDraw.pause(DELAY);
-        while (!in.isEmpty()) {
-            int i = in.readInt();
-            int j = in.readInt();
-            perc.open(i, j);
-            draw(perc, n);
-            StdDraw.show();
-            StdDraw.pause(DELAY);
-        }
     }
 }
 

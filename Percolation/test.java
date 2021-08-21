@@ -6,7 +6,7 @@
 public class test {
     public static void main(String[] args) {
         System.out.print("시작\n");
-        PercolationStats test = new PercolationStats(10,100);
+        PercolationStats test = new PercolationStats(10, 100);
         StringBuilder builder = new StringBuilder();
         builder.append("mean                                    = ")
                .append(test.mean())
