@@ -137,14 +137,6 @@ public class Percolation {
         }
     }
 
-    /*
-    public void connecting(int row, int col) {
-        if (row > size || col > size || row <= 0 || col <= 0) {
-            throw new java.lang.IndexOutOfBoundsException();
-        }
-     }
-     */
-
     // is the site (row, col) open?
     public boolean isOpen(int row, int col) {
         if (row > size || col > size || row <= 0 || col <= 0) {
@@ -191,6 +183,7 @@ public class Percolation {
         return false;
     }
 
+    //for test
     /*
     public void print() {
         StringBuilder builder = new StringBuilder();
