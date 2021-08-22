@@ -3,13 +3,13 @@
  *  Coursera User ID:  123456
  *  Last modified:     1/1/2019
  **************************************************************************** */
-
 import edu.princeton.cs.algs4.StdRandom;
 
-public class PercolationStats extends IllegalArgumentException {
-    private double[] numberOfTrials;
-    private int trials;
-    private int gridSize;
+public class PercolationStats {
+    private final double[] numberOfTrials;
+    private final int trials;
+    private final int gridSize;
+    private static final long serialVersionUID = 1L;
 
     // perform independent trials on an n-by-n grid
     public PercolationStats(int n, int trials) {
@@ -70,6 +70,23 @@ public class PercolationStats extends IllegalArgumentException {
     // high endpoint of 95% confidence interval
     public double confidenceHi() {
         return mean() + (1.96 * stddev() / Math.sqrt(trials));
+    }
+    public static void main(String[] args) {
+        PercolationStats test = new PercolationStats(10, 100);
+        StringBuilder builder = new StringBuilder();
+        builder.append("mean                                    = ")
+               .append(test.mean())
+               .append('\n');
+        builder.append("stddev                                  = ")
+               .append(test.stddev())
+               .append('\n');
+        builder.append("95% confidence interval                 = ")
+               .append('[')
+               .append(test.confidenceLo())
+               .append(", ")
+               .append(test.confidenceHi())
+               .append(']');
+        System.out.print(builder.toString());
     }
 
 }
