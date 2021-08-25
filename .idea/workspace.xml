@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="af723ace-e7e0-46f2-89bb-487e88768a5f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/PercolationStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/Percolation/PercolationStats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Queues/src/Dequeue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Queues/src/Deque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Queues/src/Permutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Queues/src/Permutation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Queues/src/RandomizedQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Queues/src/RandomizedQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Queues/Dequeue$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Queues/Dequeue$QueueIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Queues/Dequeue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Queues/Permutation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Queues/Permutation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Queues/RandomizedQueue$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Queues/RandomizedQueue$Node.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Queues/RandomizedQueue$RandomizedQueueIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Queues/RandomizedQueue$RandomizedQueueIterator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Queues/RandomizedQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Queues/RandomizedQueue.class" afterDir="false" />
     </list>
@@ -172,7 +164,7 @@
       <workItem from="1629438907504" duration="22000" />
       <workItem from="1629694483239" duration="7531000" />
       <workItem from="1629817886351" duration="4539000" />
-      <workItem from="1629865161864" duration="16409000" />
+      <workItem from="1629865161864" duration="17479000" />
     </task>
     <servers />
   </component>

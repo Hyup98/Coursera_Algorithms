@@ -116,6 +116,9 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 
     private class RandomizedQueueIterator implements Iterator<Item> {
         private int i;
+        public RandomizedQueueIterator() {
+            i = 0;
+        }
         @Override
         public boolean hasNext() {
             return randomizeQueues[i] != null;
