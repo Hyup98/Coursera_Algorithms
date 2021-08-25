@@ -2,48 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af723ace-e7e0-46f2-89bb-487e88768a5f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Queues/Queues.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Queues/src/Dequeue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Queues/src/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Queues/src/Permutation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Queues/src/RandomizedQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/checkstyle-idea.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/codeInsightSettings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/dictionaries/lift.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/externalDependencies.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/file.template.settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/fileTemplates/includes/File Header.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/fileTemplates/internal/AnnotationType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/fileTemplates/internal/Class.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/fileTemplates/internal/Enum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/fileTemplates/internal/Interface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/fileTemplates/internal/module-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/fileTemplates/internal/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/findbugs-idea.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/inspectionProfiles/Algorithms__Part_I.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/inspectionProfiles/Algorithms__Part_I.xml.old" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/inspectionProfiles/COS_126.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/libraries/algs4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/libraries/introcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/saveactions_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.lift/algs4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.lift/checkstyle-coursera.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.lift/checkstyle-lift.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.lift/checkstyle-suppressions.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.lift/introcs.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.lift/spotbugs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Percolation/.lift/stdlib.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Percolation/PercolationStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/Percolation/PercolationStats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Queues/src/Dequeue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Queues/src/Deque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Queues/src/Permutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Queues/src/Permutation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Queues/src/RandomizedQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Queues/src/RandomizedQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Queues/Dequeue$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Queues/Dequeue$QueueIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Queues/Dequeue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Queues/Permutation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Queues/Permutation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Queues/RandomizedQueue$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Queues/RandomizedQueue$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Queues/RandomizedQueue$RandomizedQueueIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Queues/RandomizedQueue$RandomizedQueueIterator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Queues/RandomizedQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Queues/RandomizedQueue.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,14 +50,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.InteractivePercolationVisualizer">
-    <configuration name="Dequeue (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Dequeue" />
-      <module name="Queues" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.RandomizedQueue">
     <configuration name="Dequeue" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Deque" />
       <module name="Queues" />
@@ -109,15 +72,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration name="Permutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Permutation" />
+      <module name="Queues" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RandomizedQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RandomizedQueue" />
+      <module name="Queues" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -171,16 +146,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Dequeue" />
-      <item itemvalue="Application.Dequeue (1)" />
       <item itemvalue="Application.InteractivePercolationVisualizer" />
       <item itemvalue="Application.PercolationVisualizer" />
+      <item itemvalue="Application.Permutation" />
+      <item itemvalue="Application.RandomizedQueue" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RandomizedQueue" />
+        <item itemvalue="Application.Permutation" />
+        <item itemvalue="Application.Dequeue" />
         <item itemvalue="Application.InteractivePercolationVisualizer" />
         <item itemvalue="Application.PercolationVisualizer" />
-        <item itemvalue="Application.Dequeue (1)" />
-        <item itemvalue="Application.Dequeue" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +171,8 @@
       <updated>1629438904473</updated>
       <workItem from="1629438907504" duration="22000" />
       <workItem from="1629694483239" duration="7531000" />
-      <workItem from="1629817886351" duration="1465000" />
+      <workItem from="1629817886351" duration="4539000" />
+      <workItem from="1629865161864" duration="16409000" />
     </task>
     <servers />
   </component>

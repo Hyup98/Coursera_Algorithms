@@ -1,9 +1,10 @@
-import java.util.ArrayList;
+//import java.util.ArrayList;
 import java.util.Iterator;
+import java.lang.Object;
 
 public class RandomizedQueue<Item> implements Iterable<Item> {
 
-    public class Node<Item> {
+    private class Node {
         private Item item;
         private Node next;
 
@@ -24,21 +25,26 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
             return item;
         }
     }
+    private int queueSize;
 
-    private ArrayList<Item> randomizedQueues = new ArrayList<>();
+    //private ArrayList<Item> randomizedQueues = new ArrayList<>();
+    private Item[] randomizeQueues;
 
     // construct an empty randomized queue
     public RandomizedQueue() {
+        randomizeQueues = (Item[]) new Object[1];
     }
 
     // is the randomized queue empty?
     public boolean isEmpty() {
-        return randomizedQueues.size() == 0;
+        //return randomizedQueues.size() == 0;
+        return queueSize == 0;
     }
 
     // return the number of items on the randomized queue
     public int size() {
-        return randomizedQueues.size();
+        //return randomizedQueues.size();
+        return queueSize;
     }
 
     // add the item
@@ -46,11 +52,22 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         if(item == null) {
             throw new java.lang.IllegalArgumentException();
         }
-        randomizedQueues.add((int)(Math.random() * randomizedQueues.size()),item);
+        //randomizedQueues.add((int)(Math.random() * randomizedQueues.size()),item);
+        if(queueSize == randomizeQueues.length) {
+            Item[] tem = (Item[]) new Object[randomizeQueues.length * 2];
+            for(int i = 0; i < queueSize; i++) {
+                tem[i] = randomizeQueues[i];
+            }
+            randomizeQueues = tem;
+        }
+        randomizeQueues[queueSize] = item;
+        queueSize++;
+        return;
     }
 
     // remove and return a random item
     public Item dequeue() {
+        /*
         if(randomizedQueues.size() == 0) {
             throw new java.util.NoSuchElementException();
         }
@@ -58,14 +75,38 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         Item tem = randomizedQueues.get(index);
         randomizedQueues.remove(index);
         return tem;
+        */
+        if(queueSize == 0) {
+            throw new java.util.NoSuchElementException();
+        }
+
+        int index = (int)(Math.random() * queueSize);
+
+        Item answer = randomizeQueues[index];
+
+        for(int i = index; i < queueSize - 1; i++) {
+            randomizeQueues[i] = randomizeQueues[i+1];
+        }
+        randomizeQueues[queueSize - 1] = null;
+        queueSize--;
+
+        if(queueSize*2 == randomizeQueues.length) {
+            Item[] tem = (Item[]) new Object[randomizeQueues.length / 2];
+            for(int i = 0; i < queueSize; i++) {
+                tem[i] = randomizeQueues[i];
+            }
+            randomizeQueues = tem;
+        }
+        return answer;
     }
 
     // return a random item (but do not remove it)
     public Item sample() {
-        if(randomizedQueues.size() == 0) {
+        if(queueSize == 0) {
             throw new java.util.NoSuchElementException();
         }
-        return randomizedQueues.get((int)(Math.random() * randomizedQueues.size()));
+
+        return randomizeQueues[(int)(Math.random() * queueSize)];
     }
 
     // return an independent iterator over items in random order
@@ -74,14 +115,20 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
     }
 
     private class RandomizedQueueIterator implements Iterator<Item> {
+        private int i;
         @Override
         public boolean hasNext() {
-            return randomizedQueues.size() != 0;
+            return randomizeQueues[i] != null;
         }
 
         @Override
         public Item next() {
-            return randomizedQueues.get((int)(Math.random() * randomizedQueues.size()));
+            if(hasNext() == false) {
+                throw  new java.util.NoSuchElementException();
+            }
+            Item answer =  randomizeQueues[i];
+            i++;
+            return answer;
         }
 
         @Override
@@ -93,6 +140,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 
     // unit testing (required)
     public static void main(String[] args) {
+
     }
 
 }

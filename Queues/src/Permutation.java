@@ -1,29 +1,43 @@
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.StdRandom;
 import edu.princeton.cs.algs4.In;
 
-import java.util.ArrayList;
-
 public class Permutation {
-    private ArrayList<Integer> usedIndex = new ArrayList<>();
 
-    Permutation(int n, String[] s) {
-        int tem;
-        while(usedIndex.size() <= s.length) {
-            tem =(int)(Math.random()*s.length);
+    public static void main(String[] args) {
+        RandomizedQueue<String> rQ = new RandomizedQueue<String>();
+        int cnt;
 
-            for(int i = 0; i < usedIndex.size(); i++) {
-                if(usedIndex.get(i) == tem) {
-                    continue;
-                }
-            }
+        while (!StdIn.isEmpty())
+        {
+            rQ.enqueue(StdIn.readString());
+        }
+        cnt = Integer.parseInt(args[0]);
 
-            usedIndex.add(tem);
-            System.out.print(s[tem]);
+        int i = 0;
+        while (i < cnt) {
+            System.out.print(rQ.dequeue() + " \n");
+            i++;
         }
 
 
     }
 
-    public static void main(String[] args) {
+    /*
+    private Permutation(int n, String[] s) {
+        int tem = n;
+        RandomizedQueue<String> rQ;
+        rQ = new RandomizedQueue<>();
+        for (int i = 0; i < s.length; i++) {
+            rQ.enqueue(s[i]);
+        }
+
+        while (n != 0) {
+            System.out.print(rQ.dequeue());
+        }
 
     }
+     */
+
 }
