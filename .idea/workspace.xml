@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af723ace-e7e0-46f2-89bb-487e88768a5f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/CollinearPoints/CollinearPoints.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CollinearPoints/src/BruteCollinearPoints.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CollinearPoints/src/FastCollinearPoints.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CollinearPoints/src/LineSegment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CollinearPoints/src/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Queues/src/RandomizedQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Queues/src/RandomizedQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Queues/RandomizedQueue$RandomizedQueueIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Queues/RandomizedQueue$RandomizedQueueIterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Queues/RandomizedQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Queues/RandomizedQueue.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +36,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../java_Team" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -74,17 +77,6 @@
     <configuration name="RandomizedQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="RandomizedQueue" />
       <module name="Queues" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -164,7 +156,12 @@
       <workItem from="1629438907504" duration="22000" />
       <workItem from="1629694483239" duration="7531000" />
       <workItem from="1629817886351" duration="4539000" />
-      <workItem from="1629865161864" duration="17479000" />
+      <workItem from="1629865161864" duration="18075000" />
+      <workItem from="1629987308534" duration="946000" />
+      <workItem from="1630216927977" duration="8420000" />
+      <workItem from="1630326152762" duration="2531000" />
+      <workItem from="1630591102801" duration="1505000" />
+      <workItem from="1630659135857" duration="16000" />
     </task>
     <servers />
   </component>

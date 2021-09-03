@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/CollinearPoints/CollinearPoints.iml" filepath="$PROJECT_DIR$/CollinearPoints/CollinearPoints.iml" />
       <module fileurl="file://$PROJECT_DIR$/Coursera_Algorithms.iml" filepath="$PROJECT_DIR$/Coursera_Algorithms.iml" />
       <module fileurl="file://$PROJECT_DIR$/Queues/Queues.iml" filepath="$PROJECT_DIR$/Queues/Queues.iml" />
     </modules>
